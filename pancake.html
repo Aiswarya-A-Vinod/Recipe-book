@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pancake Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background-color: #fff9f5;
+    }
+
+    .recipe-detail {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .recipe-detail img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      color: #ff6f61;
+      margin-top: 1.5rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    .go-back {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #ff6f61;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .go-back:hover {
+      background-color: #e0554a;
+    }
+
+    form {
+      margin-top: 2rem;
+    }
+
+    input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e0554a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="recipe-detail">
+    <img src="https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg" alt="Pancakes">
+    <h1>Pancakes</h1>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1.5 cups all-purpose flour</li>
+      <li>1 tablespoon sugar</li>
+      <li>1 tablespoon baking powder</li>
+      <li>1/2 teaspoon salt</li>
+      <li>1 egg</li>
+      <li>1.25 cups milk</li>
+      <li>3 tablespoons butter (melted)</li>
+      <li>1 teaspoon vanilla extract</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol>
+      <li>In a bowl, mix flour, sugar, baking powder, and salt.</li>
+      <li>In another bowl, beat the egg with milk, vanilla, and melted butter.</li>
+      <li>Combine wet and dry ingredients and stir until just mixed.</li>
+      <li>Heat a non-stick pan over medium heat.</li>
+      <li>Pour 1/4 cup batter per pancake onto the pan.</li>
+      <li>Flip when bubbles appear on the surface. Cook until golden.</li>
+    </ol>
+
+    <h2>Nutritional Information</h2>
+    <ul>
+      <li>Calories: 250</li>
+      <li>Carbohydrates: 30g</li>
+      <li>Fat: 10g</li>
+      <li>Protein: 6g</li>
+    </ul>
+
+    <h2>Leave a Comment</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <textarea rows="4" placeholder="Your Comment" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <a class="go-back" href="index.html">← Go Back</a>
+  </div>
+
+</body>
+</html>

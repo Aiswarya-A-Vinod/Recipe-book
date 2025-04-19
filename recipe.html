@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spaghetti Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background-color: #fff9f5;
+    }
+
+    .recipe-detail {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .recipe-detail img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      color: #ff6f61;
+      margin-top: 1.5rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    .go-back {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #ff6f61;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .go-back:hover {
+      background-color: #e0554a;
+    }
+
+    form {
+      margin-top: 2rem;
+    }
+
+    input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e0554a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="recipe-detail">
+    <img src="https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg" alt="Spaghetti">
+    <h1>Spaghetti</h1>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li>200g spaghetti</li>
+      <li>2 cloves garlic</li>
+      <li>1 tbsp olive oil</li>
+      <li>1 cup tomato sauce</li>
+      <li>Salt & pepper to taste</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol>
+      <li>Boil water and cook spaghetti until al dente.</li>
+      <li>Sauté garlic in olive oil.</li>
+      <li>Add tomato sauce, salt, and pepper.</li>
+      <li>Mix in spaghetti and stir well.</li>
+      <li>Serve hot with grated cheese if desired.</li>
+    </ol>
+
+    <h2>Nutritional Information</h2>
+    <ul>
+      <li>Calories: 350</li>
+      <li>Protein: 10g</li>
+      <li>Carbs: 60g</li>
+      <li>Fat: 8g</li>
+    </ul>
+
+    <h2>Leave a Comment</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <textarea rows="4" placeholder="Your Comment" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <a class="go-back" href="index.html">← Go Back</a>
+  </div>
+
+</body>
+</html>

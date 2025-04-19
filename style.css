@@ -1,0 +1,115 @@
+
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff9f5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .search-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+  }
+  
+  #searchBar {
+    padding: 0.75rem 1rem;
+    width: 60%;
+    max-width: 400px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  #searchBar:focus {
+    outline: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Grid */
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  /* Recipe Card */
+  .recipe-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  
+  .recipe-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .recipe-card a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .recipe-card h2 {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  
+  /* Hover Effect */
+  .recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Search Bar */
+  @media (max-width: 768px) {
+    .recipe-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

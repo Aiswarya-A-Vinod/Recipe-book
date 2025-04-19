@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chocolate Cake Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background-color: #fff9f5;
+    }
+
+    .recipe-detail {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .recipe-detail img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      color: #ff6f61;
+      margin-top: 1.5rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    .go-back {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #ff6f61;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .go-back:hover {
+      background-color: #e0554a;
+    }
+
+    form {
+      margin-top: 2rem;
+    }
+
+    input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e0554a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="recipe-detail">
+    <img src="https://www.themealdb.com/images/media/meals/tqtywx1468317395.jpg" alt="Chocolate Cake">
+    <h1>Chocolate Cake</h1>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li>2 cups all-purpose flour</li>
+      <li>1 cup cocoa powder</li>
+      <li>1.5 cups sugar</li>
+      <li>2 eggs</li>
+      <li>1 tsp baking powder</li>
+      <li>1/2 tsp salt</li>
+      <li>1 cup milk</li>
+      <li>1/2 cup vegetable oil</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol>
+      <li>Preheat your oven to 350°F (180°C).</li>
+      <li>In a large bowl, mix together the flour, cocoa powder, sugar, baking powder, and salt.</li>
+      <li>Add eggs, milk, and oil. Beat until the batter is smooth.</li>
+      <li>Pour the batter into a greased cake pan.</li>
+      <li>Bake for 30–35 minutes or until a toothpick comes out clean.</li>
+      <li>Let cool before serving. Enjoy!</li>
+    </ol>
+
+    <h2>Nutritional Information</h2>
+    <ul>
+      <li>Calories: 420</li>
+      <li>Carbohydrates: 60g</li>
+      <li>Fat: 18g</li>
+      <li>Protein: 5g</li>
+    </ul>
+
+    <h2>Leave a Comment</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <textarea rows="4" placeholder="Your Comment" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <a class="go-back" href="index.html">← Go Back</a>
+  </div>
+
+</body>
+</html>

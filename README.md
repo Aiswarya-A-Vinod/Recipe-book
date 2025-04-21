@@ -1,5 +1,5 @@
-aaaaa
-Recipe Book
+
+RECIPE BOOK
 
 A simple and elegant static website showcasing a collection of delicious recipes. Built using HTML, CSS, and JavaScript, this project serves as a demonstration of fundamental web development skills.
 
